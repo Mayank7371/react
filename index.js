@@ -1,29 +1,30 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = React.createElement(
-  "h1",
-  {
-    id: "lawda",
-  },
-  "ma ka bhosda"
+const heading = <h1 id="head">Hello GK!</h1>; // React element
+
+const Title = () => <h2>bhai mai title hu</h2>;
+const Title2 = <h2>Bhai mai title element</h2>;
+
+console.log(heading);
+console.log(<Title />);
+
+const HeadingComponent = () => (
+  <>
+    <Title />
+    {Title2}
+    <h1>Hello Component</h1>
+  </>
 );
-const heading2 = React.createElement(
-  "h1",
-  {
-    id: "lawda",
-  },
-  "behen ka bhosda"
-);
-const container = React.createElement(
-  "div",
-  {
-    id: "container",
-  },
-  [heading, heading2] // passing in children
-);
-// console.log(heading); -> it is a javascript object
-const root = ReactDOM.createRoot(document.getElementById("root"));
-// passing a react element inside a root
-root.render(container);
-// what is the difference between async and defer
+
+const HeadingComponent2 = () => <h1 className="some">Hello Component2</h1>;
+
+const root = ReactDOM.createRoot(document.getElementById("heading"));
+root.render(<HeadingComponent />);
+
+// React Componenet
+// everything is a component in react
+// there are two types of components class based and functional
+//class based old and functional is newer
+
+// a function which is returning some react element(JSX) is functional element

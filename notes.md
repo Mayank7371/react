@@ -36,3 +36,24 @@ they both are the same thing
 <!-- now babel is a normal js package it ensures the transpilation -->
 <!-- parcel installed babel for us-->
 <!-- babel is a transpiler (JSX->javascript) -->
+React:
+
+A core library for building UI components.
+Handles the creation of components and state management.
+Focuses on the logic of rendering UI.
+ReactDOM:
+
+Provides methods to interact with the DOM.
+Used for rendering React components to the DOM (ReactDOM.render).
+Offers utilities for DOM-specific operations like findDOMNode or createPortal.
+
+Virtual DOM:
+
+A lightweight JavaScript representation of the Real DOM.
+Changes are made here first, and only the differences (diffs) are updated in the Real DOM.
+Faster as it minimizes direct DOM manipulation.
+Real DOM:
+
+The actual structure of HTML elements rendered in the browser.
+Changes trigger re-renders of the entire affected section.
+Slower for updates due to full reflows/repaints.

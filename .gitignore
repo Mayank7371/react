@@ -1,7 +1,9 @@
 <<<<<<< HEAD
-/node_modules
-dist
-.parcel-cache
+node_modules/
+=======
+dist/
+node_modules/
+>>>>>>> 5b5e6d0
 =======
 # Logs
 logs
